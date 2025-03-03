@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*z185(!)g&ve1$hj8q4+eioxmn1+3=97iw(r4z3z3+!#fyig+n'
+SECRET_KEY = 'django-insecure-$($ogq55#gtv=et4yuyv5bj9btym@l8#(br6$*-=eogsq8-)tj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+# Los middleware son piezas de código que pueden modificar o procesar solicitudes
+# antes de que lleguen a la vista y respuestas antes de enviarse al usuario.
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
