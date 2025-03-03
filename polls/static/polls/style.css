@@ -1,0 +1,9 @@
+/* Muestra los enlaces en color verde */
+li a {
+    color: green;
+}
+
+/* Muestra imagen de fondo */
+body {
+    background: white url("images/background.png") no-repeat;
+}

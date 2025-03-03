@@ -11,6 +11,7 @@ python manage.py migrate polls
 
 import datetime
 
+from django.contrib import admin
 from django.db import models
 from django.utils import timezone
 
@@ -31,6 +32,13 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question_text
+
+    # Hace que se muestre "Published recently?" en la tabla en vez de "was_published_recently"
+    @admin.display(
+        boolean=True,
+        ordering="pub_date",
+        description="Published recently?",
+    )
 
     def was_published_recently(self):
         now = timezone.now()
